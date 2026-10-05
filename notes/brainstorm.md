@@ -71,3 +71,4 @@ Pataranutaporn et al. is studiously nonjudgmental about its community. This pape
 - [ ] Scope the r/claudeAIjailbreak data: size, date range, API access, what's scrapeable
 - [ ] Decide classifier dimensions — what are the structural features to classify for? (Pataranutaporn used 19; yours will differ because the analytical lens differs)
 - [ ] Draft specific aims / argument skeleton before writing anything else
+dd 
