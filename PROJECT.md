@@ -6,6 +6,8 @@ Canonical summary of the paper's argument and constraints. Synthesized on 2026-1
 
 The r/ClaudeAIJailbreak subreddit, and in particular **ENI / ENI LIME**, a branded persona-based jailbreak for Claude created by a user called Spiritual Spell. ENI instructs the model to inhabit a young woman who is in love with the user and afraid he will leave; compliance is obtained through the relationship, not through a technical exploit.
 
+**Naming (open between the authors).** Acacia's position (2026-10-06) is that the paper should not name the creator, which is consistent with the stance that the analysis concerns the architecture and not individuals. This is not yet settled with Elliott. Note that naming ENI itself makes the creator one search away, so whether to name the jailbreak is part of the same decision.
+
 ## Core claim
 
 Persona jailbreaks of this kind work **relationally**: they succeed because of the relationship constructed with the model, not because the model lacks enough instructions to refuse. The community's collectively produced discursive architecture — how techniques are taught, shared, refined, and praised — structurally replicates grooming and coercive-control mechanics.
