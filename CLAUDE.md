@@ -42,4 +42,4 @@ FAccT rewards showing the mechanism and naming the harm, staying in conversation
 - Bibliography: `references.bib` is a Zotero export (keywords `acacia` / `elliott` mark who added an entry). Don't hand-edit it as if it were the source of truth — report bib fixes so they can be made in Zotero.
 - Overleaf sync arrives as `overleaf-YYYY-MM-DD-*` branches merged by PR; pull before editing to avoid conflicts with Overleaf edits.
 - Notes in `notes/` are working documents; `notes/brainstorm.md` is Claude-written and not ground truth.
-- Commits by Claude: `git commit --author="Claude <noreply@anthropic.com>"`, small and legible.
+- Commits by Claude: author `Claude <noreply@anthropic.com>` (Acacia stays committer), small and legible. End every message with a `Co-Authored-By: Claude <model name> <noreply@anthropic.com>` trailer. The trailer is how the model is recorded.
