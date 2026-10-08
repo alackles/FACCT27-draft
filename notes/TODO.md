@@ -1,6 +1,6 @@
 # Elliott
 - [ ] Organize research Claude - optimize for paper writing
-- [ ] Fix package mirror issues lmfao and install Zotero 
+- [x] Fix package mirror issues lmfao and install Zotero 
 - [ ] Add Spiritual Spell/jailbreak community resources to Zotero 
 - [ ] Read model paper 
 # Acacia
