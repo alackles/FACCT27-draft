@@ -1,6 +1,6 @@
-note: this is claude-written from Acacia's original brainstorming session on all this, don't treat any of it as ground-truth fact; it's like someone else's notes on something I dictated.
+# FAccT Paper Brainstorm: Structural Analysis of r/claudeAIjailbreak 
 
-# FAccT Paper Brainstorm: Structural Analysis of r/claudeAIjailbreak
+note: this is claude-written from Acacia's original brainstorming session on all this, don't treat any of it as ground-truth fact; it's like someone else's notes on something I dictated.
 
 ## The paper in one sentence
 
@@ -58,7 +58,8 @@ Read in depth: Selbst et al. (five traps) and Buolamwini & Gebru (Gender Shades)
 
 Pataranutaporn et al. is studiously nonjudgmental about its community. This paper can't be neutral about the structure — the structural claim is that the jailbreak community's discourse replicates grooming mechanics. But the non-neutrality attaches to the architecture, not the people. That distinction is the paper's central rhetorical challenge.
 
----
+--- 
+
 
 ## To do
 
@@ -71,4 +72,13 @@ Pataranutaporn et al. is studiously nonjudgmental about its community. This pape
 - [ ] Scope the r/claudeAIjailbreak data: size, date range, API access, what's scrapeable
 - [ ] Decide classifier dimensions — what are the structural features to classify for? (Pataranutaporn used 19; yours will differ because the analytical lens differs)
 - [ ] Draft specific aims / argument skeleton before writing anything else
-dd 
+
+## Elliott Notes on Acacia's Notes :)
+- Interesting note about judgement of structure not individuals - I think we can afford to be a little judgemental when analyzing the documents but will def need to toe the line here. My thought is that we can judge the artifacts (the guides) as harshly as we want while avoiding language that describes the creator as a groomer/abuser. 
+- The gap in the coercive control architecture should be filled, but let me know if we need more. Herman's captivity chapter describes control tactics structurally and I've also grabbed several sources that should help provide a structural framework. 
+- I've also updated our bib with a lot of the most relevant coercive control literature both from the feminist perspective and (yuck) the criminal justice perspective which is given a lot of weight which is annoying but you know.  
+- Pulled some sources about predator network analysis that should make the methods: network section stronger. 
+- Am going to work on creating a structural definition of coercive control synthesizing a lot of these sources using my wgss brain but let me know if you've done anything on this yet. 
+- Wonder if we should use the term coercive control exclusively instead of including grooming when we write because of how loaded that word is? 
+- Note from my Claude you can take or leave: "Pataranutaporn's role shrinks. It's no longer the pipeline you're replicating, just precedent for computational research on an AI-relationship subreddit. Tag it companion AI and drop methods: documents. The network analysis finds who is structurally central and how techniques move through the community, using Blokland for the reply-network construction, Fonhof for centrality and roles, and Girvan and Newman and Zachary for community structure. The document analysis examines what the central figures' artifacts, like ENI, are built to do, using the coercive control frameworks. Each answers a question the other can't: the network can't tell you what a guide does, and close reading can't tell you whether its author matters to the community."
+- And then maybe my biggest thought of the night that I've been mulling over after reading your Claude's summary and looking at my Claude's summary and thinking about you being worried that FAccT isn't going to like us anthropomorphizing Claude - there is enough literature creating a framework where we can discuss LLMs as relational (idk what word goes here that doesn't make us sound crazy, I keep reaching for beings lol) without claiming any sort of consciousness or interiority. I think this is actually one of the strongest frameworks we can add to the paper and it /should/ help us and not harm us. But also, you know, people are stupid so. 
