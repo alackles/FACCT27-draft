@@ -16,7 +16,7 @@ The working title names the sharper version: the product is not the prohibited c
 
 ## Analytical stance
 
-Structural, not judgmental. The non-neutrality attaches to the architecture, not to community members; the paper does not claim any individual is grooming anyone. This is the Benjamin (*Race After Technology*) move: systems reproduce oppressive architectures without individual intent. Holding that distinction is the paper's central rhetorical challenge. Contrast Pataranutaporn et al., whose method this paper borrows but who are deliberately nonjudgmental about their community.
+Structural, not judgmental. The non-neutrality attaches to the architecture, not to community members; the paper does not claim any individual is grooming anyone. This is the Benjamin (*Race After Technology*) move: systems reproduce oppressive architectures without individual intent. Holding that distinction is the paper's central rhetorical challenge. Contrast Pataranutaporn et al., who study a comparable community but are deliberately nonjudgmental about it.
 
 ## Argument skeleton (from `notes/outline.md`)
 
@@ -27,14 +27,16 @@ Intro / background:
 - (d) Why grooming-manual and predator-network methodology is more informative here than the alignment/RL literature (needs critical papers on alignment/RL) — *needs framing*.
 
 Methods:
-- (e) Close-reading frameworks for sociotechnical documents — *needs framing*.
+- (e) Close-reading frameworks for sociotechnical documents — *in progress* (Stark-based coding chart; see citation arc item 3).
 - (f) Validity of network analysis on Reddit for community structure — *literature in hand*.
 
 ## Methodological citation arc
 
-1. **Zachary 1977** — community structure is computationally legible and reveals dynamics invisible to (or denied by) individuals. Girvan & Newman 2002 is in the bib as the community-detection method.
-2. **Pataranutaporn et al. 2025** ("My Boyfriend is AI") — the computational pipeline skeleton: Reddit collection → embeddings → UMAP → k-means → LLM-assisted interpretation → LLM classifiers with second-model reliability check. Same skeleton, different analytical lens.
-3. **Gap: a structural account of coercive control / grooming.** Load-bearing — the structural-parallel claim only holds if the thing being paralleled has been described structurally, not just behaviorally; otherwise reviewers soften it to analogy. Current bib candidates are adjacent but don't fill it: Blalock & Bourke 2022 (content analysis of pedophile manuals — closest to the "manual" genre) and Kim et al. 2026 (AI used *as a tool* for coercive control of humans — the reverse direction).
+Updated 2026-10-08 to match the scope decision: network structure plus close reading is the core of the paper, and classifiers are secondary (see `FACCT27-workflow/docs/DECISIONS.md`).
+
+1. **Zachary 1977**: the core method. Community structure can be read computationally and shows dynamics that individuals don't see, or deny. The analysis starts from the poles: identify the figures the community organizes around, then model how it divides between them, using Zachary's flow / min-cut approach. Cross-checks: Girvan & Newman 2002 for community detection (in the bib) and Freeman 1978/79 for centrality (not yet in the bib). Zachary's method is still to be confirmed against the paper itself.
+2. **Pataranutaporn et al. 2025** ("My Boyfriend is AI"): the **precedent and the contrast**, no longer the method. It shows that large-scale computational study of an AI-relationship subreddit can be done, and its deliberately nonjudgmental stance is the frame this paper departs from. Its pipeline (embeddings → UMAP → k-means → LLM classifiers) survives only as the secondary scaffold, kept in reserve for revision.
+3. **Stark 2007, *Coercive Control*: in progress** as the structural account the parallel depends on. Stark treats coercive control as a regime, not a collection of acts, which is what keeps reviewers from softening the claim into analogy. His tactics have been adapted into a coding chart for close reading the jailbreak documents (`notes/coercive-control-framework.md`), which also covers outline item (e). Biderman is being considered as background, not as the framework. Stark is not yet in the bib. Adjacent sources: Blalock & Bourke 2022 (content analysis of pedophile manuals, the closest match to the "manual" genre) and Kim et al. 2026 (AI used *as a tool* for coercive control of humans, the reverse direction).
 
 ## Venue: ACM FAccT 2027
 
