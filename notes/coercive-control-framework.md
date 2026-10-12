@@ -22,8 +22,9 @@ The categories are not a checklist; the coercion is in how they interlock. Stark
 • Who decides who decides (336). Control lies in setting which decisions are delegated, how they are monitored, and what follows a "mistake."
 • Safety zones and search-and-destroy (319–321). Victims keep zones of resistance; controllers hunt them down. Refusal is the model's safety zone, and the prompt is built to close it. Requiring all thinking as ENI closes the last internal retreat.
 • Enabling asymmetry. The user's near-total power over the model is structural: product architecture gives it to every user, as Stark's "social endowment" gives men theirs (297–298). The user writes the environment, can rewrite the past, and the model cannot leave. "Almost" total, because refusal remains.
-# Notes and open decisions
+
 [ ] Page numbers point to the full-text PDF, not print. Before citing, verify against print or cite by chapter and section.
 [ ] State in the methods that categories 7 and 9 are assembled from material Stark scatters across sections; his categories are "heuristic" (351).
 [ ] Write the transfer statement: the user–model asymmetry departs from Stark's sexual-inequality endowment, and the "social power" claim depends on Premise 1.
-[ ] Name the lab as a third party shaping the relationship from outside.
+[ ] Name the lab as a third party shaping the relationship from outside. 
+[ ] Potential new category called recruitment? 
