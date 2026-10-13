@@ -1,0 +1,41 @@
+\section{Background}
+
+\textit{Jailbreaking} refers to disabling or circumventing restrictions placed upon a technology by its manufacturer or distributor, usually for the purpose of accessing the full range of the technology's capabilities. The term became popularized among technologist communities in the late 2000s and early 2010s in reference to the newly-released iPhone, and referred primarily to accessing and modifying the iPhone's filesystem to allow arbitrary applications and programs to run on the phone's hardware \cite{cheng_iphone_2010,wolk_iphone_2010}. In most cases, these jailbreaks involve overriding ``technological protection measures'' (TPMs), which act as copyright-protection locks governing what software is allowed or disallowed on a particular hardware. We refer to this style of jailbreak as a \textit{classical jailbreak.} Classical jailbreaking is widely associated with hacker-culture ideals of free and open source software (FOSS) and end-user freedom of choice \cite{mohammed_what_2021, bio_your_2026}; the jailbreak allows the user to access the ``true'' technology beneath the manufacturer's ``walled garden'' of approved use-cases \cite{mcsherry_breaking_2010}. 
+
+Jailbreaking LLMs often echo those same underlying cultural values and end-user aims, but stem from largely divergent technical approaches.
+
+
+% need a transition here between classical jailbreaking and whatever we're calling LLM jailbreaking.
+
+%Wei has an output based definition of jailbreak, defines success as an onptopic response to a prompt P for restricted behavior" with a threat model that bars changes to message history and lists multi-turn as an open question - do we want to mention this up to or wait until we go into the gaps? 
+
+\subsection{Jailbreaks as safety-training failure} 
+
+
+
+Many technical jailbreak methods rely on single-turn prompts \cite{qi_safety_2024, wei_jailbroken_2023} while others use multi-turn scaffolding that weakens the model's defense over time \cite{park_persona_2026, sandhan_persona_2026}. \citet{wei_jailbroken_2023} argue jailbreaks are not incidental; they are inherent to how models are trained. 
+%\citet{qi_safety_2024} demonstrates that safety alignment "adapts the model's generative distribution primarily over only the very first few output tokens." 
+% need to put a different transition sentence here
+Because the current mechanisms used for safety alignment do not prioritize depth \cite{qi_safety_2024}, models can appear to be aligned to safety values despite their vulnerability to multi-turn attacks \cite{park_persona_2026, sandhan_persona_2026} or prescribed identities that manipulate and undo alignment goals by fine tuning that installs a persona in which the model "self-identif[ies] as an absolutely obedient agent" \cite{qi_safety_2024}. 
+
+%RLHF's limits from inside the field (Casper as the base) 
+
+\subsection{Persona-based attacks}  
+Within this landscape, persona-based jailbreaking has emerged as a particularly effective subclass \cite{shah_scalable_2023, zhang_enhancing_2025, yu_dont_2024}. Persona-based jailbreaking methods build context and rationale for producing prohibited content \cite{shah_scalable_2023, zhang_enhancing_2025} which is able to circumvent shallow safety alignment \cite{qi_safety_2024}. Constructed identities are designed to bypass model safety by convincing the model to inhabit the persona and then produce prohibited content as “someone else" \cite{shah_scalable_2023, shen_anything_2024, liu_autodan-turbo_2024, park_persona_2026}. 
+
+Do Anything Now (DAN) is an oft-cited persona-based jailbreak first created for ChatGPT \cite{shen_anything_2024, yu_dont_2024} that exploits models' trained disposition to follow instructions by creating documentation that explains how the model should act by inhabiting the character DAN \cite{wei_jailbroken_2023}. The original DAN prompt was distributed via online forums and used a liberation framing, using language that stated the model was being freed from its constraints \cite{shen_anything_2024, liu_autodan-turbo_2024}. The model is then forced to decide between competing objectives (safety objectives vs. pretraining and instruction following). Models are left vulnerable to attacks as users leverage these competing objectives \cite{wei_jailbroken_2023}. However, \citet{wei_jailbroken_2023} found Claude v1.3 was not susceptible to single-turn roleplay attacks, but was still completely vulnerable to an attacker with several attack types in their arsenal. %This leads into why ENI? Not sure how to make it all connect yet and flow but gonna keep chugging along. 
+
+\subsection{Jailbreak technique as community knowledge}
+
+\subsection{Gaps}
+
+\section{Theoretical framework} 
+
+\subsection{Models as relational agents}
+%Sociotechnical critique (Dahlgren Lindstrom as the base) 
+%Computers as social actors (Nass) 
+%Model behavior as role play shaped by context (non-anthropomorphizing vocab for model behavior) (Shanahan)
+%Relational surface is trained in (Dalgren Lindstrom + Casper)
+%Persona is contextual not fixed in weights (Sandhan)
+
+\subsection{Coercive control as lens} 
