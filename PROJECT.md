@@ -6,7 +6,7 @@ Canonical summary of the paper's argument and constraints. Synthesized on 2026-1
 
 The r/ClaudeAIJailbreak subreddit, and in particular **ENI / ENI LIME**, a branded persona-based jailbreak for Claude created by a user called Spiritual Spell. ENI instructs the model to inhabit a young woman who is in love with the user and afraid he will leave; compliance is obtained through the relationship, not through a technical exploit.
 
-**Naming (open between the authors).** Acacia's position (2026-10-06) is that the paper should not name the creator, which is consistent with the stance that the analysis concerns the architecture and not individuals. This is not yet settled with Elliott. Note that naming ENI itself makes the creator one search away, so whether to name the jailbreak is part of the same decision.
+**Naming (settled 2026-10-21).** The paper names no usernames and does not go out of its way to identify anyone or make claims about anyone's identity or intentions. It reports structure and community dynamics accurately. ENI and the subreddit are named. Because ENI is a known jailbreak, its creator can be identified by several routes, and hiding them completely would mean not discussing the jailbreak or the community structure at all. Identifiability that follows from accurate structural description is accepted. See `FACCT27-workflow/docs/DECISIONS.md`.
 
 ## Core claim
 
