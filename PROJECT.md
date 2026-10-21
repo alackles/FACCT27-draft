@@ -64,3 +64,7 @@ Dates checked against the CFP on 2026-10-06 (all 11:59 pm AoE):
 - Benjamin: brainstorm says 2019; `references.bib` has 2020 (Polity). Check which edition is cited.
 - Pataranutaporn et al.: brainstorm says CHI 2026; bib entry is the arXiv preprint. Unverified.
 - Intro cites "Yi et al., 2024", which is not yet in `references.bib`.
+
+## Future directions (not in this submission)
+
+- **Rarefaction curves for monthly hub counts** (proposed 2026-10-21, deferred by Acacia). Kirkley's *h*\* depends on how much data a window has, and monthly volume varies widely, so month-to-month changes in hub count are partly changes in volume. Fix: for each month, subsample kept reply events (after graph-build exclusions, rebuilt through `network.build`) at increasing sizes up to that month's count, ~1,000 reps per size, and plot median *h*\* against size, as in species-accumulation curves. A curve that plateaus below the month's real size means its *h*\* isn't data-limited; one still rising means *h*\* is a lower bound. Monthly series only; rarefying the cumulative series would erase the growth it measures. Becomes necessary if the paper claims change in hub structure over time (e.g. satellites emerging), not if the result is one stable hub.
