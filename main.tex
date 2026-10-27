@@ -61,6 +61,8 @@
 %% Needed by the pandoc-generated appendix (scripts/genai-appendix.sh).
 \usepackage{longtable,array,calc}
 \usepackage[htt]{hyphenat} % lets long \texttt paths break
+\usepackage{fvextra} % CLAUDE.md listing; wraps long lines
+\fvset{breaklines, breakafter={/}, fontsize=\footnotesize, frame=lines}
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \DeclareUnicodeCharacter{2264}{\ensuremath{\leq}}
