@@ -24,22 +24,22 @@ Every submission requires a Generative AI Usage Statement (`sections/endmatter/g
 
 ## Submission checklist (anonymity and format)
 
-- `\documentclass[manuscript,screen,review,anonymous]{acmart}` — currently missing `anonymous`.
+- `\documentclass[manuscript,screen,review,anonymous]{acmart}` (`anonymous` added 2026-10-26).
 - No author names, affiliations, ORCIDs, or identifying statements in the body; self-citations in third person.
-- No links to `github.com/alackles/*` — use an anonymized mirror for code/data availability.
-- Endmatter at submission: **GenAI statement (required)**, ethical considerations (expected; must address use of community data). Omit acknowledgements, author contributions, competing interests, and positionality if it identifies the authors.
+- No links to `github.com/alackles/*` — use an anonymized mirror if any code or data availability statement is added.
+- Endmatter at submission: **GenAI statement (required)**, ethical considerations (expected; must address close-reading a community-made jailbreak document, ENI; the subreddit reply corpus is not analyzed in this submission). Omit acknowledgements, author contributions, competing interests, and positionality if it identifies the authors. The endmatter files exist but are empty and not yet `\input`.
 - Limitations belong in the main body, not the endmatter.
 - Length: ≤14 pages single-column including figures/tables; references unlimited; one extra page for endmatter only. Appendices allowed but reviewers needn't read them — main text must stand alone.
 - References in ACM Reference Format if archival.
 
 ## Register
 
-FAccT rewards showing the mechanism and naming the harm, staying in conversation with theoretical frameworks (not just findings), and uncomfortable claims whose discomfort is earned by evidence. It punishes speculation dressed as analysis and technical fixes offered for structural problems. Three citation registers do different jobs: the computational method (Pataranutaporn), the structural concept it surfaces (Benjamin, the coercive-control source), and why community structure is legible at all (Zachary). Canonical background papers are tagged `facct-background` in the bib.
+FAccT rewards showing the mechanism and naming the harm, staying in conversation with theoretical frameworks (not just findings), and uncomfortable claims whose discomfort is earned by evidence. It punishes speculation dressed as analysis and technical fixes offered for structural problems. Since the 2026-10-27 rescope the paper is a framework-and-close-reading argument, not an empirical community study. The citation registers are listed in `PROJECT.md` (technical jailbreak literature as the foil, relational accounts of models, Stark on coercive control as a regime). The Zachary / Pataranutaporn network registers are no longer in this submission. Canonical background papers are tagged `facct-background` (one entry `facct background`) in the bib.
 
 ## Repo conventions
 
-- Sections: `sections/0N_*.tex`, `\input` from `main.tex`; endmatter in `sections/endmatter/`.
+- Sections: `sections/<name>.tex` (e.g. `intro`, `relational`, `rlhf`), `\input` from `main.tex` under a `\section` heading there; endmatter in `sections/endmatter/`. The numbered `0N_*` scheme was retired 2026-10-27.
 - Bibliography: `references.bib` is a Zotero export (keywords `acacia` / `elliott` mark who added an entry). Don't hand-edit it as if it were the source of truth — report bib fixes so they can be made in Zotero.
 - Overleaf sync arrives as `overleaf-YYYY-MM-DD-*` branches merged by PR; pull before editing to avoid conflicts with Overleaf edits.
-- Notes in `notes/` are working documents; `notes/brainstorm.md` is Claude-written and not ground truth.
+- Notes in `notes/` are working documents. `notes/brainstorm-acacia.md` and `notes/brainstorm-elliott.md` are Claude-written (from dictation / Elliott's research Claude), predate the rescope, and are not ground truth.
 - Commits by Claude: author `Claude <noreply@anthropic.com>` (Acacia stays committer), small and legible. End every message with a `Co-Authored-By: Claude <model name> <noreply@anthropic.com>` trailer. The trailer is how the model is recorded.

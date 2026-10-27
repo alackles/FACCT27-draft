@@ -1,5 +1,7 @@
 # Coercive Control / ENI Analysis Brainstorm - Claude Generated 
 
+> **Partly superseded scope (2026-10-27).** Premise 3's network analysis and the Blalock & Bourke grooming-manual precedent are out of this submission. Premises 1–2 and the positioning remain close to the current argument (`PROJECT.md`). Kept as a record.
+
 **Similar note - this is lifted from my research Claude who has helping me build our bib - I've edited it lightly and don't fully endorse the suggestions for which sources go with which framework, need to use my human brain to make it a little more cohesive.)**
 ## Thesis
 

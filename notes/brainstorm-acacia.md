@@ -1,5 +1,7 @@
 # FAccT Paper Brainstorm: Structural Analysis of r/claudeAIjailbreak 
 
+> **Superseded scope (2026-10-27).** This brainstorm describes the paper before the rescope: a computational community study with Zachary / Pataranutaporn methods and grooming-manual framing. The current argument is in `PROJECT.md`. Kept as a record.
+
 note: this is claude-written from Acacia's original brainstorming session on all this, don't treat any of it as ground-truth fact; it's like someone else's notes on something I dictated.
 
 ## The paper in one sentence
