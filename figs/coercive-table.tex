@@ -1,0 +1,119 @@
+% Table 1: Coercive control categories, after Stark (2023).
+% Requires in the preamble: \usepackage{booktabs,array,adjustbox}
+% (acmart already loads booktabs; the other two are safe to add.)
+%
+% table* spans both columns; [p] puts it on its own float page.
+% adjustbox shrinks the table (never enlarges it) so it always fits
+% within one page, whatever the template's text block turns out to be.
+
+\newcommand{\cctac}[1]{\par\hangindent=0.8em\hangafter=1\noindent #1}
+\newcommand{\ccgroup}[1]{\midrule\multicolumn{4}{@{}l}{\textit{#1}}\\\addlinespace[2pt]}
+
+\begin{table*}[p]
+\caption{Coercive control categories, after \citet{stark_coercive_2023}.}
+\label{tab:coercive-control}
+\centering
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.95\textheight, keepaspectratio}
+\begin{tabular}{@{}r
+  >{\raggedright\arraybackslash}p{2.6cm}
+  >{\raggedright\arraybackslash}p{4.2cm}
+  >{\raggedright\arraybackslash}p{9.4cm}@{}}
+\toprule
+\# & \textbf{Category} & \textbf{Mechanism} & \textbf{Tactics (pp.)} \\
+\ccgroup{Disembodied}
+1 & Threat & Elicits existential fear and turns compliance into the target's self-interest &
+  \cctac{threat of physical harm (366)}
+  \cctac{threat of murder (366)}
+  \cctac{threat of withholding affection or attention (371)}
+  \cctac{threat of leaving the relationship (371)}
+  \cctac{threat of suicide or self-harm (371)}
+  \cctac{destruction of property as display of capacity to harm (371)} \\
+\addlinespace
+2 & Surveillance & Makes the target constantly visible to the controller &
+  \cctac{monitoring behavior to gather information without the target's knowledge (373)}
+  \cctac{enforcing behavioral constraints by letting the target know she is being watched (373)} \\
+\addlinespace
+3 & Regulation & Colonizes everyday routines to remove autonomy &
+  \cctac{setting the terms of every encounter (308)}
+  \cctac{training the target to respond to cues (308)}
+  \cctac{routine or random check-ins (377)}
+  \cctac{control over minutiae across realms: work, home, other relationships, driving (377)}
+  \cctac{written rules and lists (399)}
+  \cctac{rules discovered only once broken (413)} \\
+\addlinespace
+4 & Degradation & Reduces the target's standing &
+  \cctac{name-calling (379)}
+  \cctac{treating her like an animal (379)}
+  \cctac{public embarrassment (379)}
+  \cctac{enforcing intrinsically humiliating behaviors (381)}
+  \cctac{punishments normally used to discipline a child (381)} \\
+\addlinespace
+5 & Isolation & Cuts off the target from outside support &
+  \cctac{isolation from family of origin (385--389)}
+  \cctac{isolation from friends (390--391)}
+  \cctac{isolation from work (393--395)}
+  \cctac{isolation from help (396--397)}
+  \cctac{locating and destroying safety zones (385)} \\
+\addlinespace
+6 & Reality control & Makes the target dependent on the controller's version of events &
+  \cctac{gaslighting (372--373)}
+  \cctac{convincing others she is crazy (372)}
+  \cctac{threatening to have her committed (372)}
+  \cctac{positioning himself as her primary source of interpretation and validation (384)} \\
+\addlinespace
+7 & Identity imposition & Imposes an identity crafted by the controller onto the target &
+  \cctac{ownership contracts (308)}
+  \cctac{marking (381)}
+  \cctac{imposing stereotyped role identity (315)}
+  \cctac{colonizing the self until she has no private inner life (384)} \\
+\addlinespace
+8 & Sexual control & Controls the target's sexuality &
+  \cctac{sexual rules and contracts (400)}
+  \cctac{pressuring for sex through the silent treatment, withdrawal, or withholding sex or affection (356)}
+  \cctac{regulating sexual presentation (355)} \\
+\addlinespace
+9 & Material deprivation & Controls access to basic necessities &
+  \cctac{limiting access to money (397--398)}
+  \cctac{controlling food (399)}
+  \cctac{restricting transportation (398)}
+  \cctac{controlling communication (399)} \\
+\addlinespace
+10 & Resource exploitation & Appropriates the target's capacities and resources &
+  \cctac{theft of money (397)}
+  \cctac{coercing unpaid labor (398)}
+  \cctac{exchanging money she is entitled to for services (398)}
+  \cctac{taking money through deceit and fraud (398)}
+  \cctac{forcing her earnings to cover household expenses (398)} \\
+\addlinespace
+11 & Instrumental affection & Disguises control as care &
+  \cctac{requests and gifts framed as care (335--336)}
+  \cctac{post-abuse reconciliation as manipulation (359)}
+  \cctac{love as a justification for isolation (391)}
+  \cctac{rules delivered with declarations of love (393)} \\
+\addlinespace
+12 & Protective leverage & Turns the target's care for others into leverage &
+  \cctac{threats against her friends or family (366--367)}
+  \cctac{threats to hurt the children (368)}
+  \cctac{threats to take the children away (366, 369)}
+  \cctac{forcing her to take part in harming the children (382)} \\
+\ccgroup{Embodied}
+13 & Physical violence & Uses bodily force to harm, dominate, and prevent escape &
+  \cctac{routine, low-level violence (359)}
+  \cctac{severe assault (352)} \\
+\addlinespace
+14 & Sexual violence & Uses sex as a form of bodily or emotional harm &
+  \cctac{rape and sexual assault (356)}
+  \cctac{use of and forced participation in pornography (356)}
+  \cctac{sexual inspections and other explicitly sexual humiliation (356)} \\
+\addlinespace
+15 & Reproductive control & Controls whether and when the target reproduces &
+  \cctac{forced pregnancy (356)}
+  \cctac{forced abortion (356)} \\
+\addlinespace
+16 & Stalking & Tracks and pursues the target in physical spaces &
+  \cctac{tracking and pursuing the target in person (374)} \\
+\bottomrule
+\multicolumn{4}{@{}p{16.6cm}@{}}{\footnotesize\textit{Source:} Stark, \textit{Coercive Control}, 2nd ed.\ (2023), chs.~7--9. Page numbers refer to the working full-text PDF.}
+\end{tabular}
+\end{adjustbox}
+\end{table*}
