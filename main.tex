@@ -91,25 +91,33 @@
   \end{list}%
 }
  
+% --- Margin geometry: notes go in the column annotpage frees ---
+% Notes are ordinary \marginpar's, so LaTeX stacks them instead of
+% overprinting; marginfix carries overflow to the next page. The paper
+% has no other \marginpar, so the geometry is set globally (it is read
+% at shipout, after annotpage's group may have closed).
+\usepackage{marginfix}
+\makeatletter
+\AtBeginDocument{%
+  \setlength{\marginparwidth}{0.22\textwidth}%
+  \setlength{\marginparsep}{\dimexpr-0.25\textwidth+1em\relax}%
+  \setlength{\marginparpush}{0.5\baselineskip}%
+  \@mparswitchfalse % twoside would put even-page notes on the left
+  \normalmarginpar
+}
+\makeatother
+
 % --- Inline annotation command ---
 % #1 = marker (number or short label)
 % #2 = highlighted text span
-% #3 = margin annotation text
+% #3 = margin annotation text; if blank, only the superscript is set
 \newcommand{\annot}[3]{%
   \hl{#2}\textsuperscript{\small #1}%
-  \vadjust{%
-    \smash{%
-      \vbox to 0pt{%
-        \vskip-\baselineskip
-        \hbox to 0pt{%
-          \hskip\dimexpr\linewidth+1em\relax
-          \parbox[t]{0.22\textwidth}{%
-            \footnotesize\RaggedRight #1.~#3%
-          }%
-          \hss
-        }%
-        \vss
-      }%
+  \ifblank{#3}{}{%
+    \marginpar{%
+      % \normalcolor: soul leaves the highlight color open at the end of
+      % a line where a highlight wraps, and the note would inherit it.
+      \normalcolor\footnotesize\RaggedRight #1.~#3%
     }%
   }%
 }
