@@ -1,6 +1,6 @@
 # FACCT27-draft — paper repository
 
-LaTeX source for a FAccT 2027 submission. Project argument, dates, and repo conventions: `docs/PROJECT.md`. Venue rules in full: `notes/facct-2027-author-guide.md`.
+LaTeX source for a FAccT 2027 submission. Venue rules in full: `notes/facct-2027-author-guide.md`.
 
 ## Hard rule: Claude does not write paper prose
 
