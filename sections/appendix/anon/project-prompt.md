@@ -1,6 +1,6 @@
 # FACCT27-draft — paper repository
 
-LaTeX source for a FAccT 2027 submission. Project argument, dates, and repo conventions: `PROJECT.md`. Venue rules in full: `notes/facct-2027-author-guide.md`.
+LaTeX source for a FAccT 2027 submission. Project argument, dates, and repo conventions: `docs/PROJECT.md`. Venue rules in full: `notes/facct-2027-author-guide.md`.
 
 ## Hard rule: Claude does not write paper prose
 
@@ -20,7 +20,7 @@ FAccT prohibits the use of LLMs to generate text for publications, and undisclos
 
 ## GenAI disclosure log
 
-Every submission requires a Generative AI Usage Statement (`sections/endmatter/genAI.tex`), and the author guide says to err on the side of disclosure. Whenever Claude does something disclosure-relevant — literature search, idea generation, argument critique, synthesizing notes, checking a technical claim — append an entry to `notes/genai-log.md` (date, model, task, what humans did with the output). Pure LaTeX/compile help can be logged in aggregate.
+Every submission requires a Generative AI Usage Statement (`sections/endmatter/genAI.tex`), and the author guide says to err on the side of disclosure. Whenever Claude does something disclosure-relevant — literature search, idea generation, argument critique, synthesizing notes, checking a technical claim — append an entry to `docs/genai-log.md` (date, model, task, what humans did with the output). Pure LaTeX/compile help can be logged in aggregate.
 
 ## Submission checklist (anonymity and format)
 
