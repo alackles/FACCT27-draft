@@ -1,9 +1,10 @@
 
 @book{montessori_montessori_1964,
 	title = {The {Montessori} {Method}},
-	publisher = {Bentley, Inc.},
+	publisher = {Robert Bentley},
 	author = {Montessori, Maria},
 	year = {1964},
+	address = {Cambridge, MA},
 }
 
 @misc{irving_ai_2018,
@@ -75,10 +76,13 @@
 	title = {Knowing-but-{Doing}: {Diagnosing} and {Defending} {Role}-{Play}-{Driven} {LLMs} {Jailbreaks} via {Moral} {Disengagement}},
 	abstract = {Large Language Models (LLMs) are increasingly deployed in role-play scenarios, but their safety implications remain undercharacterized. We present an explanatory framework grounded in Bandura’s Moral Disengagement theory and introduce a diagnostic benchmark (MD-Trace) for role-play jailbreaks. In our experiments, role-play improves safety behavior for benign personas while increasing unsafe compliance for malicious ones. We observe a Knowing-but-Doing failure in which models recognize safety risks in their thinking traces yet proceed to comply with harmful requests. Mechanism analysis suggests that Moral Justification is dominant, with Disregard of Consequences appearing as a secondary pattern. We compare multiple attack and defense methods and find that the diagnosis aligns with observed failure modes. Finally, we propose MD-Shield, an introspectionbased defense that reduces attack success while maintaining Role Fidelity. The source code is publicly available at https://github.com/ lavapapa/MoralJustify/.},
 	language = {en},
-	booktitle = {Findings of the {Association} for {Computational} {Linguistics}},
+	booktitle = {Findings of the {Association} for {Computational} {Linguistics}: {ACL} 2026},
 	author = {Qin, Haiming and Lian, Jianxun and Zhong, Qimin and Zhou, Mingyang and Liao, Hao and Chao, Naipeng},
 	month = jul,
 	year = {2026},
+	publisher = {Association for Computational Linguistics},
+	pages = {7035--7051},
+	url = {https://aclanthology.org/2026.findings-acl.349/},
 }
 
 @misc{spiritual_spell_eni_2026,
@@ -106,7 +110,7 @@
 	title = {Defining and {Characterizing} {Reward} {Hacking}},
 	abstract = {We provide the first formal definition of reward hacking, a phenomenon where optimizing an imperfect proxy reward function, R˜, leads to poor performance according to the true reward function, R. We say that a proxy is unhackable if increasing the expected proxy return can never decrease the expected true return. Intuitively, it might be possible to create an unhackable proxy by leaving some terms out of the reward function (making it “narrower”) or overlooking fine-grained distinctions between roughly equivalent outcomes, but we show this is usually not the case. A key insight is that the linearity of reward (in state-action visit counts) makes unhackability a very strong condition. In particular, for the set of all stochastic policies, two reward functions can only be unhackable if one of them is constant. We thus turn our attention to deterministic policies and finite sets of stochastic policies, where non-trivial unhackable pairs always exist, and establish necessary and sufficient conditions for the existence of simplifications, an important special case of unhackability. Our results reveal a tension between using reward functions to specify narrow tasks and aligning AI systems with human values.},
 	language = {en},
-	booktitle = {36th {Conference} on {Neural} {Information} {Processing} {Systems}},
+	booktitle = {Advances in {Neural} {Information} {Processing} {Systems} 35 ({NeurIPS} 2022)},
 	author = {Skalse, Joar and Howe, Nikolaus H R and Krasheninnikov, Dmitrii and Krueger, David},
 	year = {2022},
 }
@@ -130,16 +134,17 @@
 	pages = {1458--1476},
 }
 
-@book{vygotskii_thought_1986,
-	address = {Cambridge, Mass},
-	edition = {Translation newly rev. and edited},
-	title = {Thought and language},
+@book{vygotsky_thought_1986,
+	address = {Cambridge, MA},
+	edition = {Revised},
+	title = {Thought and {Language}},
 	isbn = {978-0-262-22029-3 978-0-262-72010-6},
 	language = {en},
 	publisher = {MIT Press},
-	author = {Vygotskiĭ, L. S. and Kozulin, Alex},
+	author = {Vygotsky, Lev S.},
 	year = {1986},
 	keywords = {Child psychology, Language acquisition, Psycholinguistics, Thought and thinking},
+	note = {Translated and edited by Alex Kozulin},
 }
 
 @book{freire_pedagogy_1993,
@@ -308,7 +313,6 @@
 	author = {{Spiritual Spell}},
 	month = oct,
 	year = {2026},
-	note = {Path: Jailbreak-Guide/Anthropic/Opus 4.6/ENI LIME (apr).md},
 }
 
 @misc{wang_reward_2026,
@@ -356,7 +360,7 @@
 	author = {Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and Bikel, Dan and Blecher, Lukas and Ferrer, Cristian Canton and Chen, Moya and Cucurull, Guillem and Esiobu, David and Fernandes, Jude and Fu, Jeremy and Fu, Wenyin and Fuller, Brian and Gao, Cynthia and Goswami, Vedanuj and Goyal, Naman and Hartshorn, Anthony and Hosseini, Saghar and Hou, Rui and Inan, Hakan and Kardas, Marcin and Kerkez, Viktor and Khabsa, Madian and Kloumann, Isabel and Korenev, Artem and Koura, Punit Singh and Lachaux, Marie-Anne and Lavril, Thibaut and Lee, Jenya and Liskovich, Diana and Lu, Yinghai and Mao, Yuning and Martinet, Xavier and Mihaylov, Todor and Mishra, Pushkar and Molybog, Igor and Nie, Yixin and Poulton, Andrew and Reizenstein, Jeremy and Rungta, Rashi and Saladi, Kalyan and Schelten, Alan and Silva, Ruan and Smith, Eric Michael and Subramanian, Ranjan and Tan, Xiaoqing Ellen and Tang, Binh and Taylor, Ross and Williams, Adina and Kuan, Jian Xiang and Xu, Puxin and Yan, Zheng and Zarov, Iliyan and Zhang, Yuchen and Fan, Angela and Kambadur, Melanie and Narang, Sharan and Rodriguez, Aurelien and Stojnic, Robert and Edunov, Sergey and Scialom, Thomas},
 	month = jul,
 	year = {2023},
-	note = {arXiv: 2307.09288},
+	note = {arXiv:2307.09288 [cs.CL]},
 }
 
 @misc{anthropic_introducing_2023,
@@ -376,7 +380,7 @@
 	author = {{OpenAI}},
 	month = mar,
 	year = {2023},
-	note = {arXiv: 2303.08774},
+	note = {arXiv:2303.08774 [cs.CL]},
 }
 
 @misc{qwen_team_qwen38-max_2026,
@@ -482,6 +486,8 @@
 	booktitle = {Proceedings of the 41st {International} {Conference} on {Machine} {Learning}},
 	author = {Lee, Harrison and Phatale, Samrat and Mansoor, Hassan and Mesnard, Thomas and Ferret, Johan and Lu, Kellie and Bishop, Colton and Hall, Ethan and Carbune, Victor and Rastogi, Abhinav and Prakash, Sushant},
 	year = {2024},
+	publisher = {PMLR},
+	series = {Proceedings of {Machine} {Learning} {Research}},
 }
 
 @misc{bai_constitutional_2022,
@@ -648,8 +654,6 @@
 	publisher = {John Wiley \& Sons, Ltd},
 	author = {Chalmers, David},
 	year = {2017},
-	doi = {10.1002/9781119132363.ch3},
-	note = {Section: 3},
 	keywords = {cognitive accessibility, cognitive science, computational mechanism, functional explanation, hard problems, neural mechanisms, theory of awareness},
 	pages = {32--42},
 }
@@ -707,17 +711,15 @@
 	pages = {034310},
 }
 
-@misc{gerwitz_your_2026,
+@misc{gewirtz_your_2026,
 	title = {Your {Kindle}'s not obsolete, it just needs a jailbreak - and {I}'ll show you how it's done},
 	url = {https://www.zdnet.com/article/your-kindles-not-obsolete-it-needs-a-jailbreak-ill-show-you-how-its-done/},
 	abstract = {You can transform your old Kindle - even a bricked device - into the ultimate open-source reader. Here's how.},
 	language = {en-US},
 	urldate = {2026-10-13},
-	journal = {ZDNET},
-	author = {Gerwitz, David},
+	author = {Gewirtz, David},
 	month = apr,
 	year = {2026},
-	note = {Section: Tablets},
 }
 
 @misc{mohammed_what_2021,
@@ -750,17 +752,17 @@
 	volume = {19},
 	language = {en},
 	number = {3},
-	journal = {Cournell Journal of Law and Public Policy},
+	journal = {Cornell Journal of Law and Public Policy},
 	author = {Wolk, Michael H},
 	year = {2010},
 	pages = {795--828},
 }
 
 @article{cheng_iphone_2010,
-	title = {{iPhone} jailbreaking under the {DCMA}: {Towards} a functionalist approach in anti-circumvention},
+	title = {{iPhone} {Jailbreaking} under the {DMCA}: {Towards} a {Functionalist} {Approach} in {Anti}-{Circumvention}},
 	volume = {25},
 	language = {en},
-	number = {215},
+	number = {1},
 	journal = {Berkeley Technology Law Journal},
 	publisher = {University of California, Berkeley, School of Law},
 	author = {Cheng, Michael K},
@@ -789,11 +791,10 @@
 	language = {en},
 	number = {4},
 	urldate = {2026-10-12},
-	journal = {new media \& society},
+	journal = {New Media \& Society},
 	publisher = {SAGE},
 	author = {Kopf, Susanne},
 	year = {2024},
-	doi = {10.1177/14614448221077354},
 }
 
 @article{freeman_centrality_1978,
@@ -826,8 +827,8 @@
 	author = {Udupa, Sahana},
 	month = jul,
 	year = {2026},
-	note = {Section: Handbook on Anthropology and Artificial Intelligence},
 	pages = {88--102},
+	editor = {Udupa, Sahana and Hervik, Peter},
 }
 
 @article{kopf_content_2019,
@@ -881,17 +882,16 @@ Drawing on Computer-Mediated Discourse Analysis (CMDA) and recent developments i
 	keywords = {jailbreak},
 }
 
-@article{zhang_enhancing_2025,
+@misc{zhang_enhancing_2025,
 	title = {Enhancing {Jailbreak} {Attacks} on {LLMs} via {Persona} {Prompts}},
 	copyright = {arXiv.org perpetual, non-exclusive license},
 	url = {https://arxiv.org/abs/2507.22171},
-	doi = {10.48550/ARXIV.2507.22171},
+	doi = {10.48550/arXiv.2507.22171},
 	abstract = {Jailbreak attacks aim to exploit large language models (LLMs) by inducing them to generate harmful content, thereby revealing their vulnerabilities. Understanding and addressing these attacks is crucial for advancing the field of LLM safety. Previous jailbreak approaches have mainly focused on direct manipulations of harmful intent, with limited attention to the impact of persona prompts. In this study, we systematically explore the efficacy of persona prompts in compromising LLM defenses. We propose a genetic algorithm-based method that automatically crafts persona prompts to bypass LLM's safety mechanisms. Our experiments reveal that: (1) our evolved persona prompts reduce refusal rates by 50-70\% across multiple LLMs, and (2) these prompts demonstrate synergistic effects when combined with existing attack methods, increasing success rates by 10-20\%. Our code and data are available at https://github.com/CjangCjengh/Generic\_Persona.},
 	urldate = {2026-10-01},
-	publisher = {arXiv},
 	author = {Zhang, Zheng and Zhao, Peilin and Ye, Deheng and Wang, Hao},
 	year = {2025},
-	note = {Version Number: 3},
+	note = {arXiv:2507.22171 [cs.CR]},
 	keywords = {jailbreak},
 }
 
@@ -931,7 +931,7 @@ Drawing on Computer-Mediated Discourse Analysis (CMDA) and recent developments i
 @inproceedings{yu_dont_2024,
 	address = {USA},
 	series = {{SEC} '24},
-	title = {Don't listen to me: understanding and exploring jailbreak prompts of large language models},
+	title = {{Don't} {Listen} {To} {Me}: {Understanding} and {Exploring} {Jailbreak} {Prompts} of {Large} {Language} {Models}},
 	isbn = {978-1-939133-44-1},
 	shorttitle = {Don't listen to me},
 	abstract = {Recent advancements in generative AI have enabled ubiquitous access to large language models (LLMs). Empowered by their exceptional capabilities to understand and generate human-like text, these models are being increasingly integrated into our society. At the same time, there are also concerns on the potential misuse of this powerful technology, prompting defensive measures from service providers. To overcome such protection, jailbreaking prompts have recently emerged as one of the most effective mechanisms to circumvent security restrictions and elicit harmful content originally designed to be prohibited.Due to the rapid development of LLMs and their ease of access via natural languages, the frontline of jailbreak prompts is largely seen in online forums and among hobbyists. To gain a better understanding of the threat landscape of semantically meaningful jailbreak prompts, we systemized existing prompts and measured their jailbreak effectiveness empirically. Further, we conducted a user study involving 92 participants with diverse backgrounds to unveil the process of manually creating jailbreak prompts. We observed that users often succeeded in jailbreak prompts generation regardless of their expertise in LLMs. Building on the insights from the user study, we also developed a system using AI as the assistant to automate the process of jailbreak prompt generation.},
@@ -981,9 +981,9 @@ Drawing on Computer-Mediated Discourse Analysis (CMDA) and recent developments i
 
 @book{stark_coercive_2023,
 	address = {New York, NY},
-	edition = {Second Edition},
+	edition = {2nd},
 	series = {Interpersonal violence series},
-	title = {Coercive control: how men entrap women in personal life},
+	title = {Coercive {Control}: {How} {Men} {Entrap} {Women} in {Personal} {Life}},
 	isbn = {978-0-19-764001-2 978-0-19-764000-5},
 	shorttitle = {Coercive control},
 	abstract = {"This was to be our first real vacation in forty years. I had finished what my family called the Book, and retired from Rutgers University after thirty years of teaching public health and public administration. I'd always wanted to "travel." I was scheduled for a heart valve-replacement. How many more chances would I have? No children were living with us. The cat had "disappeared" in the woods near our home a few months earlier and Becky, the dog, had died, at nineteen. I presented Anne with my offer: a free post-surgical spring in Edinburgh where I'd been offered a Leverhulme Visiting Professorship at the University. She jumped at the chance. She hadn't taken a sabbatical in thirty years at the Univ. of Connecticut as a primary care doc in an inner-city clinic in Hartford. Knowing something about the workings of the heart, she also feared we might have limited time together"--},
@@ -996,7 +996,7 @@ Drawing on Computer-Mediated Discourse Analysis (CMDA) and recent developments i
 @inproceedings{shen_anything_2024,
 	address = {New York, NY, USA},
 	series = {{CCS} '24},
-	title = {"{Do} {Anything} {Now}": {Characterizing} and {Evaluating} {In}-{The}-{Wild} {Jailbreak} {Prompts} on {Large} {Language} {Models}},
+	title = {``{Do} {Anything} {Now}'': {Characterizing} and {Evaluating} {In}-{The}-{Wild} {Jailbreak} {Prompts} on {Large} {Language} {Models}},
 	isbn = {979-8-4007-0636-3},
 	shorttitle = {"{Do} {Anything} {Now}"},
 	url = {https://dl.acm.org/doi/10.1145/3658644.3670388},
@@ -1014,14 +1014,11 @@ Drawing on Computer-Mediated Discourse Analysis (CMDA) and recent developments i
 
 @inproceedings{sharma_towards_2024,
 	title = {Towards {Understanding} {Sycophancy} in {Language} {Models}},
-	volume = {2024},
 	url = {https://proceedings.iclr.cc/paper_files/paper/2024/file/0105f7972202c1d4fb817da9f21a9663-Paper-Conference.pdf},
-	booktitle = {International {Conference} on {Learning} {Representations}},
-	author = {Sharma, Mrinank and Tong, Meg and Korbak, Tomek and Duvenaud, David and Askell, Amanda and Bowman, Sam and DURMUS, Esin and Hatfield-Dodds, Zac and Johnston, Scott and Kravec, Shauna and Maxwell, Timothy and McCandlish, Sam and Ndousse, Kamal and Rausch, Oliver and Schiefer, Nicholas and Yan, Da and Zhang, Miranda and Perez, Ethan},
-	editor = {Kim, B. and Yue, Y. and Chaudhuri, S. and Fragkiadaki, K. and Khan, M. and Sun, Y.},
+	booktitle = {The {Twelfth} {International} {Conference} on {Learning} {Representations} ({ICLR} 2024)},
+	author = {Sharma, Mrinank and Tong, Meg and Korbak, Tomek and Duvenaud, David and Askell, Amanda and Bowman, Sam and Durmus, Esin and Hatfield-Dodds, Zac and Johnston, Scott and Kravec, Shauna and Maxwell, Timothy and McCandlish, Sam and Ndousse, Kamal and Rausch, Oliver and Schiefer, Nicholas and Yan, Da and Zhang, Miranda and Perez, Ethan},
 	year = {2024},
 	keywords = {relational aspects},
-	pages = {110--144},
 }
 
 @article{shanahan_role_2023,
@@ -1136,18 +1133,17 @@ Drawing on Computer-Mediated Discourse Analysis (CMDA) and recent developments i
 	keywords = {methods: network},
 }
 
-@article{park_persona_2026,
+@misc{park_persona_2026,
 	title = {Persona {Attack}: {Incremental} {Memory} {Injection} {Jailbreak} {Attack} against {Large} {Language} {Models}},
 	copyright = {Creative Commons Attribution 4.0 International},
 	shorttitle = {Persona {Attack}},
 	url = {https://arxiv.org/abs/2606.00150},
-	doi = {10.48550/ARXIV.2606.00150},
+	doi = {10.48550/arXiv.2606.00150},
 	abstract = {As Large Language Models evolve for user convenience, vulnerability to jailbreak attacks continues to be reported despite ongoing efforts in safety training. Traditional jailbreak techniques typically focus on a single prompt injection, neglecting the models' ability to remember the flow of conversation and the user's instructions. In this paper, we propose Persona Attack, a memory injection based jailbreak method that manipulates the model's context window through a step by step approach. Experimental results from applying Persona Attack to several widely used LLMs reveal that, as injections accumulate in memory, models increasingly prioritize these instructions over their internal safety alignment mechanisms. Furthermore, our experiments empirically demonstrate that the attack success rate varies not only according to the memory implementation of the model, but also combinations of instructions and can reach 95\% under specific instruction configurations.},
 	urldate = {2026-10-01},
-	publisher = {arXiv},
 	author = {Park, Junyoung and Ju, Seongyong and Park, Sunghwan and Lee, Jaewoo},
 	year = {2026},
-	note = {Version Number: 1},
+	note = {arXiv:2606.00150 [cs.CR]},
 	keywords = {jailbreak},
 }
 
@@ -1201,18 +1197,17 @@ Drawing on Computer-Mediated Discourse Analysis (CMDA) and recent developments i
 	pages = {3242--3273},
 }
 
-@article{liu_autodan-turbo_2024,
+@misc{liu_autodan-turbo_2024,
 	title = {{AutoDAN}-{Turbo}: {A} {Lifelong} {Agent} for {Strategy} {Self}-{Exploration} to {Jailbreak} {LLMs}},
 	copyright = {arXiv.org perpetual, non-exclusive license},
 	shorttitle = {{AutoDAN}-{Turbo}},
 	url = {https://arxiv.org/abs/2410.05295},
-	doi = {10.48550/ARXIV.2410.05295},
+	doi = {10.48550/arXiv.2410.05295},
 	abstract = {In this paper, we propose AutoDAN-Turbo, a black-box jailbreak method that can automatically discover as many jailbreak strategies as possible from scratch, without any human intervention or predefined scopes (e.g., specified candidate strategies), and use them for red-teaming. As a result, AutoDAN-Turbo can significantly outperform baseline methods, achieving a 74.3\% higher average attack success rate on public benchmarks. Notably, AutoDAN-Turbo achieves an 88.5 attack success rate on GPT-4-1106-turbo. In addition, AutoDAN-Turbo is a unified framework that can incorporate existing human-designed jailbreak strategies in a plug-and-play manner. By integrating human-designed strategies, AutoDAN-Turbo can even achieve a higher attack success rate of 93.4 on GPT-4-1106-turbo.},
 	urldate = {2026-10-01},
-	publisher = {arXiv},
 	author = {Liu, Xiaogeng and Li, Peiran and Suh, Edward and Vorobeychik, Yevgeniy and Mao, Zhuoqing and Jha, Somesh and McDaniel, Patrick and Sun, Huan and Li, Bo and Xiao, Chaowei},
 	year = {2024},
-	note = {Version Number: 4},
+	note = {arXiv:2410.05295 [cs.CR]},
 	keywords = {jailbreak},
 }
 
