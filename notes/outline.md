@@ -13,7 +13,7 @@
 7. The Guardrails Trap (no file yet)
 8. Conclusions (`conclusions.tex`, empty)
 
-Status per section and open problems: `PROJECT.md`.
+Status per section and open problems: `docs/PROJECT.md`.
 
 ## Superseded (pre-2026-10-27)
 

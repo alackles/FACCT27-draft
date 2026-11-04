@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Regenerate the temporary GenAI appendix from the working files:
 # a snapshot of CLAUDE.md (typeset verbatim, like a code listing) and
-# notes/genai-log.md (converted to a LaTeX table by pandoc).
+# docs/genai-log.md (converted to a LaTeX table by pandoc).
 # Writes two versions: anon/ (names and repo links masked, leak-checked)
 # and named/ (unchanged). main.tex picks one with \ifanon, which
 # follows acmart's `anonymous' option. Rerun at submission so the log
@@ -17,7 +17,7 @@ tmp=$(mktemp -d)
 trap 'rm -rf "$tmp"' EXIT
 
 # source file : output name : how it's typeset
-files=("CLAUDE.md:project-prompt:verbatim" "notes/genai-log.md:genai-log:pandoc")
+files=("CLAUDE.md:project-prompt:verbatim" "docs/genai-log.md:genai-log:pandoc")
 
 anonymize() {
   sed -e 's/Acacia/Author A/g' -e 's/acacia/author-a/g' \
