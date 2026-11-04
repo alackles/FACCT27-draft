@@ -1,16 +1,18 @@
 \pdfoutput=1 % arXiv: build with pdflatex (must be in the first 5 lines)
 %%
 %% arXiv preprint: the named, non-anonymous version of main.tex in a
-%% plain article class. Shares sections/, figs/, and references.bib
-%% with main.tex, so edits to the paper land in both. Keep the body
-%% below in step with main.tex's (section headings, \input order).
+%% article class with arxiv.sty (repo root). Shares sections/, figs/,
+%% and references.bib with main.tex, so edits to the paper land in
+%% both. Keep the body below in step with main.tex's (section
+%% headings, \input order).
 %% Build and package for upload with scripts/arxiv-package.sh.
 %%
-\documentclass[11pt]{article}
+\documentclass{article}
 
+%% arxiv.sty sets the geometry (it loads geometry itself), Times and
+%% Helvetica, type sizes, headers, \keywords, and \And for authors.
+\usepackage{arxiv}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[margin=1in]{geometry}
 \usepackage{microtype}
 \usepackage{booktabs}
 \usepackage{graphicx}
@@ -93,13 +95,16 @@
 \usepackage[colorlinks=true,allcolors=blue!50!black]{hyperref}
 
 \title{``Blind Compliance'': Coercive Control in AI Jailbreaking}
+%% Running header (center); main.tex's short title. arxiv.sty's
+%% \headeright and \undertitle both default to "A Preprint".
+\renewcommand{\shorttitle}{Blind Compliance}
 
 \author{%
   Acacia L. Ackles\thanks{Corresponding author.}\\
   Lawrence University\\
   Appleton, Wisconsin, USA\\
   \texttt{acacia.ackles@lawrence.edu}
-  \and
+  \And
   Elliott Whitson\\
   \texttt{aelwhitson@gmail.com}
 }
@@ -112,9 +117,9 @@
 
 \begin{abstract}
 \input{sections/0_abstract}
-
-\medskip\noindent\textbf{Keywords:} persona-based jailbreaks, human-AI interaction, relational AI, coercive control
 \end{abstract}
+
+\keywords{persona-based jailbreaks \and human-AI interaction \and relational AI \and coercive control}
 
 \section{Introduction}
 
