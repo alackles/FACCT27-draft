@@ -32,6 +32,10 @@ Every submission requires a Generative AI Usage Statement (`sections/endmatter/g
 - Length: ≤14 pages single-column including figures/tables; references unlimited; one extra page for endmatter only. Appendices allowed but reviewers needn't read them — main text must stand alone.
 - References in ACM Reference Format if archival.
 
+## arXiv preprint
+
+`arxiv.tex` is the named preprint: plain `article`, same `sections/`, `figs/`, and bib as `main.tex`. The checklist above applies to `main.tex` only. Keep the two files' bodies (section headings, `\input` order) and shared preamble block in step. Package with `bash scripts/arxiv-package.sh`; it refuses a stale GenAI appendix and strips `%` comments from the uploaded copy only.
+
 ## Register
 
 FAccT rewards showing the mechanism and naming the harm, staying in conversation with theoretical frameworks (not just findings), and uncomfortable claims whose discomfort is earned by evidence. It punishes speculation dressed as analysis and technical fixes offered for structural problems.
